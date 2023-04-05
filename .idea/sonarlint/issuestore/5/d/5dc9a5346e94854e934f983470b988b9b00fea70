@@ -1,0 +1,11 @@
+
+|
+java:S1104>"aMake VALUE_EXPIRATION_DATE a static final constant or non-public and provide accessors if needed.(³µ¼øÿÿÿÿ
+V
+java:S1444>";Make this "public static VALUE_EXPIRATION_DATE" field final(³µ¼øÿÿÿÿ
+{
+java:S3008>"`Rename this field "VALUE_EXPIRATION_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³µ¼øÿÿÿÿ
+–
+java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æ–Õ
+2
+java:S1118B"Hide this public constructor.(æ–Õ

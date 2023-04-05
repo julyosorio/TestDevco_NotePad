@@ -1,0 +1,11 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›¹ë–
+
+java:S1128
+"bRemove this unused import 'co.com.iris.certification.userinterfaces.SpinnerUI.LOADSCREEN_SPINNER'.(Œ³Šß8¸ø¤©Õ0
+
+java:S1128"mRemove this unused import 'co.com.iris.certification.userinterfaces.dashboard.DashboardUI.MENU_TRANSACTIONS'.(èÅÇ†ıÿÿÿÿ8¸ø¤©Õ0
+¡
+java:S1128"„Remove this unused import 'co.com.iris.certification.userinterfaces.transactions.DashboardTransactionsUI.LABEL_REGISTERED_ACCOUNTS'.( Á€k8¸ø¤©Õ0
+‡
+java:S1128"eRemove this unused import 'net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isNotPresent'.(‰óÂÍûÿÿÿÿ8¸ø¤©Õ0

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Manage billing, with irisPay" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-02-22T15:29:23" hostname="PSOFKA01130" time="466.213">
+  <properties/>
+  <testcase name="Successfully create new billing link #1" classname="Manage billing, with irisPay" time="76.816"/>
+  <testcase name="Successfully create new billing link #2" classname="Manage billing, with irisPay" time="57.687"/>
+  <testcase name="Successfully create new billing link #3" classname="Manage billing, with irisPay" time="59.24"/>
+  <testcase name="Successfully create new billing link #4" classname="Manage billing, with irisPay" time="52.5"/>
+  <testcase name="Successfully create new billing link from an invoice #1" classname="Manage billing, with irisPay" time="58.265"/>
+  <testcase name="Successfully create new billing link from an invoice #2" classname="Manage billing, with irisPay" time="48.869"/>
+  <testcase name="Successfully create new billing link from an invoice #3" classname="Manage billing, with irisPay" time="59.158"/>
+  <testcase name="Successfully create new billing link from an invoice #4" classname="Manage billing, with irisPay" time="53.678"/>
+  <system-out><![CDATA[?[92m|-- 1: Successfully create new billing link ({nit=900800005, username=adminrobot2, password=*2023Automatizacion*, emailUser=usuarioautomatizacion2@yopmail.com, customerName=Juanita Perez, documentType=Cédula de ciudadanía, documentNumber=1098766780, customerEmail=clienteiris@yopmail.com.co, billingConcept=concepto del cobro 1, reference1=Factura, withOrWithoutReference1=NO, referenceNumber1=c0001, addReference=no, reference2=, withOrWithoutReference2=, referenceNumber2=, tag=Otros4, billingDetail=Detalle del cobro 1, totalValue=3000, withOrWithoutIVA=Si, expirationDate=25/02/2023})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot2 | *2023Automatizacion* | usuarioautomatizacion2@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot2' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link in the irispay module
+| customerName | documentType | documentNumber | customerEmail | billingConcept | reference1 | withOrWithoutReference1 | referenceNumber1 | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | totalValue | withOrWithoutIVA | expirationDate |
+| Juanita Perez | Cédula de ciudadanía | 1098766780 | clienteiris@yopmail.com.co | concepto del cobro 1 | Factura | NO | c0001 | no |  |  |  | Otros4 | Detalle del cobro 1 | 3000 | Si | 25/02/2023 |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-User enters 'Juanita Perez' into Field to enter the name of the customer to whom the collection link will be generated.?[0m
+?[92m|-------- Iris-User clicks on Field that with the list of document types to select?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (127f6bc3b2ac374b200baccff845ed4f)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User enters '1098766780' into Field to enter the document number?[0m
+?[92m|-------- Iris-User enters 'clienteiris@yopmail.com.co' into ?[0m
+?[92m|-------- Iris-User enters 'concepto del cobro 1' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (127f6bc3b2ac374b200baccff845ed4f)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on do not enter reference number?[0m
+?[92m|-------- Iris-User enters 'c0001' into Field to enter number of the first reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (127f6bc3b2ac374b200baccff845ed4f)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle del cobro 1' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters '3000' into field to enter the total gross value of the billing?[0m
+?[92m|-------- Iris-User clicks on Selection to apply IVA?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-user select date?[0m
+?[92m|---------- Iris-User clicks on input that open the calendar to choose start date transaction?[0m
+?[92m|---------- Iris-User clicks on button to open years list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (127f6bc3b2ac374b200baccff845ed4f)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on button to open months list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (127f6bc3b2ac374b200baccff845ed4f)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on field that contains the expiration date to select?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 2: Successfully create new billing link ({nit=900800005, username=adminrobot1, password=*2023Automatizacion*, emailUser=usuarioautomatizacion1@yopmail.com, customerName=Lina Perez, documentType=NIT, documentNumber=123456789, customerEmail=clienteiris@yopmail.com.co, billingConcept=concepto del cobro 2, reference1=Sin referencia, withOrWithoutReference1=, referenceNumber1=, addReference=, reference2=, withOrWithoutReference2=, referenceNumber2=, tag=Consultoría2, billingDetail=Detalle del cobro 2, totalValue=2000, withOrWithoutIVA=no, expirationDate=})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot1 | *2023Automatizacion* | usuarioautomatizacion1@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot1' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link in the irispay module
+| customerName | documentType | documentNumber | customerEmail | billingConcept | reference1 | withOrWithoutReference1 | referenceNumber1 | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | totalValue | withOrWithoutIVA | expirationDate |
+| Lina Perez | NIT | 123456789 | clienteiris@yopmail.com.co | concepto del cobro 2 | Sin referencia |  |  |  |  |  |  | Consultoría2 | Detalle del cobro 2 | 2000 | no |  |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-User enters 'Lina Perez' into Field to enter the name of the customer to whom the collection link will be generated.?[0m
+?[92m|-------- Iris-User clicks on Field that with the list of document types to select?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (bc3a000c81ba771c651eb1c74e6bda57)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User enters '123456789' into Field to enter the document number?[0m
+?[92m|-------- Iris-User enters 'clienteiris@yopmail.com.co' into ?[0m
+?[92m|-------- Iris-User enters 'concepto del cobro 2' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (bc3a000c81ba771c651eb1c74e6bda57)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (bc3a000c81ba771c651eb1c74e6bda57)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle del cobro 2' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters '2000' into field to enter the total gross value of the billing?[0m
+?[92m|-------- Iris-User clicks on Selection to Not apply IVA?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 3: Successfully create new billing link ({nit=900800005, username=adminrobot2, password=*2023Automatizacion*, emailUser=usuarioautomatizacion2@yopmail.com, customerName=Maria Perez, documentType=Pasaporte, documentNumber=1098766780, customerEmail=, billingConcept=concepto del cobro 3, reference1=autoreferencia1, withOrWithoutReference1=SI, referenceNumber1=, addReference=Si, reference2=autoreferencia2, withOrWithoutReference2=SI, referenceNumber2=, tag=Consultoría2, billingDetail=Detalle del cobro 3, totalValue=2500, withOrWithoutIVA=Si, expirationDate=25/02/2023})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot2 | *2023Automatizacion* | usuarioautomatizacion2@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot2' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link in the irispay module
+| customerName | documentType | documentNumber | customerEmail | billingConcept | reference1 | withOrWithoutReference1 | referenceNumber1 | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | totalValue | withOrWithoutIVA | expirationDate |
+| Maria Perez | Pasaporte | 1098766780 |  | concepto del cobro 3 | autoreferencia1 | SI |  | Si | autoreferencia2 | SI |  | Consultoría2 | Detalle del cobro 3 | 2500 | Si | 25/02/2023 |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-User enters 'Maria Perez' into Field to enter the name of the customer to whom the collection link will be generated.?[0m
+?[92m|-------- Iris-User clicks on Field that with the list of document types to select?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User enters '1098766780' into Field to enter the document number?[0m
+?[92m|-------- Iris-User enters 'concepto del cobro 3' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on select enter reference number?[0m
+?[92m|-------- Iris-User clicks on Link to add a reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on selection without reference number?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle del cobro 3' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters '2500' into field to enter the total gross value of the billing?[0m
+?[92m|-------- Iris-User clicks on Selection to apply IVA?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-user select date?[0m
+?[92m|---------- Iris-User clicks on input that open the calendar to choose start date transaction?[0m
+?[92m|---------- Iris-User clicks on button to open years list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on button to open months list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (adda64ccfe30125ed165e5d52d70776f)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on field that contains the expiration date to select?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 4: Successfully create new billing link ({nit=900800005, username=adminrobot1, password=*2023Automatizacion*, emailUser=usuarioautomatizacion1@yopmail.com, customerName=Carlos Perez, documentType=Cédula de ciudadanía, documentNumber=1098766780, customerEmail=clienteiris@yopmail.com.co, billingConcept=concepto del cobro 4, reference1=Factura, withOrWithoutReference1=NO, referenceNumber1=Cobro002, addReference=Si, reference2=autoreferencia1, withOrWithoutReference2=No, referenceNumber2=cobro1, tag=Otros4, billingDetail=Detalle del cobro 4, totalValue=4000, withOrWithoutIVA=NO, expirationDate=})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot1 | *2023Automatizacion* | usuarioautomatizacion1@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot1' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link in the irispay module
+| customerName | documentType | documentNumber | customerEmail | billingConcept | reference1 | withOrWithoutReference1 | referenceNumber1 | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | totalValue | withOrWithoutIVA | expirationDate |
+| Carlos Perez | Cédula de ciudadanía | 1098766780 | clienteiris@yopmail.com.co | concepto del cobro 4 | Factura | NO | Cobro002 | Si | autoreferencia1 | No | cobro1 | Otros4 | Detalle del cobro 4 | 4000 | NO |  |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-User enters 'Carlos Perez' into Field to enter the name of the customer to whom the collection link will be generated.?[0m
+?[92m|-------- Iris-User clicks on Field that with the list of document types to select?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (49b4bf6830446d2de87240746a372fb9)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User enters '1098766780' into Field to enter the document number?[0m
+?[92m|-------- Iris-User enters 'clienteiris@yopmail.com.co' into ?[0m
+?[92m|-------- Iris-User enters 'concepto del cobro 4' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (49b4bf6830446d2de87240746a372fb9)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on do not enter reference number?[0m
+?[92m|-------- Iris-User enters 'Cobro002' into Field to enter number of the first reference?[0m
+?[92m|-------- Iris-User clicks on Link to add a reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (49b4bf6830446d2de87240746a372fb9)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on selection with reference number?[0m
+?[92m|-------- Iris-User enters 'cobro1' into Field to enter number of the second reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (49b4bf6830446d2de87240746a372fb9)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle del cobro 4' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters '4000' into field to enter the total gross value of the billing?[0m
+?[92m|-------- Iris-User clicks on Selection to Not apply IVA?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 1: Successfully create new billing link from an invoice ({nit=900800005, username=adminrobot2, password=*2023Automatizacion*, emailUser=usuarioautomatizacion2@yopmail.com, billingConcept=concepto 1, addReference=no, reference2=, withOrWithoutReference2=, referenceNumber2=, tag=Otros4, billingDetail=Detalle 1, expirationDate=01/03/2023, fileName=factura})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot2 | *2023Automatizacion* | usuarioautomatizacion2@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot2' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link from an invoice in the irispay module
+| billingConcept | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | expirationDate | fileName |
+| concepto 1 | no |  |  |  | Otros4 | Detalle 1 | 01/03/2023 | factura |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link from invoice?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-user file upload?[0m
+?[92m|---------- Iris-User enters 'C:\Users\yulieth.osorio\Documents\Automation Iris\CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/files/factura.xml' into Field to upload xml file corresponding to invoice?[0m
+?[92m|-------- Iris-User enters 'concepto 1' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (e8da5a9510ad8b2f4e9512b2f4ebf73a)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle 1' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-user select date?[0m
+?[92m|---------- Iris-User clicks on input that open the calendar to choose start date transaction?[0m
+?[92m|---------- Iris-User clicks on button to open years list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (e8da5a9510ad8b2f4e9512b2f4ebf73a)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on button to open months list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (e8da5a9510ad8b2f4e9512b2f4ebf73a)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on field that contains the expiration date to select?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 2: Successfully create new billing link from an invoice ({nit=900800005, username=adminrobot1, password=*2023Automatizacion*, emailUser=usuarioautomatizacion1@yopmail.com, billingConcept=concepto 2, addReference=No, reference2=, withOrWithoutReference2=, referenceNumber2=, tag=Consultoría2, billingDetail=Detalle 2, expirationDate=, fileName=factura2})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot1 | *2023Automatizacion* | usuarioautomatizacion1@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot1' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link from an invoice in the irispay module
+| billingConcept | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | expirationDate | fileName |
+| concepto 2 | No |  |  |  | Consultoría2 | Detalle 2 |  | factura2 |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link from invoice?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-user file upload?[0m
+?[92m|---------- Iris-User enters 'C:\Users\yulieth.osorio\Documents\Automation Iris\CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/files/factura2.xml' into Field to upload xml file corresponding to invoice?[0m
+?[92m|-------- Iris-User enters 'concepto 2' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (d4bc253262057d4be75aa5ac0842d971)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle 2' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 3: Successfully create new billing link from an invoice ({nit=900800005, username=adminrobot2, password=*2023Automatizacion*, emailUser=usuarioautomatizacion2@yopmail.com, billingConcept=concepto 3, addReference=Si, reference2=autoreferencia2, withOrWithoutReference2=SI, referenceNumber2=, tag=Consultoría2, billingDetail=Detalle 3, expirationDate=01/03/2023, fileName=factura3})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot2 | *2023Automatizacion* | usuarioautomatizacion2@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot2' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link from an invoice in the irispay module
+| billingConcept | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | expirationDate | fileName |
+| concepto 3 | Si | autoreferencia2 | SI |  | Consultoría2 | Detalle 3 | 01/03/2023 | factura3 |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link from invoice?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-user file upload?[0m
+?[92m|---------- Iris-User enters 'C:\Users\yulieth.osorio\Documents\Automation Iris\CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/files/factura3.xml' into Field to upload xml file corresponding to invoice?[0m
+?[92m|-------- Iris-User enters 'concepto 3' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Link to add a reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (f5cdefa996b8da11a88487afcd59a7f0)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on selection without reference number?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (f5cdefa996b8da11a88487afcd59a7f0)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle 3' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-user select date?[0m
+?[92m|---------- Iris-User clicks on input that open the calendar to choose start date transaction?[0m
+?[92m|---------- Iris-User clicks on button to open years list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (f5cdefa996b8da11a88487afcd59a7f0)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on button to open months list?[0m
+?[92m|---------- Iris-user select option?[0m
+?[92m|------------ Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (f5cdefa996b8da11a88487afcd59a7f0)] -> xpath: //div[@aria-disabled='false']]?[0m
+?[92m|---------- Iris-User clicks on field that contains the expiration date to select?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+?[92m|-- 4: Successfully create new billing link from an invoice ({nit=900800005, username=adminrobot1, password=*2023Automatizacion*, emailUser=usuarioautomatizacion1@yopmail.com, billingConcept=concepto 4, addReference=Si, reference2=autoreferencia1, withOrWithoutReference2=No, referenceNumber2=cobro1, tag=Otros4, billingDetail=Detalle 4, expirationDate=, fileName=factura})?[0m
+?[92m|---- Given The "Iris-User" authenticates to the Iris website using the following credentials:
+| nit | username | password | emailUser |
+| 900800005 | adminrobot1 | *2023Automatizacion* | usuarioautomatizacion1@yopmail.com |?[0m
+?[92m|------ Iris-User opens the browser at https://empresas.qa.iristesting.com.co?[0m
+?[92m|------ Iris-user login?[0m
+?[92m|-------- Iris-User enters '900800005' into field to enter nit?[0m
+?[92m|-------- Iris-User enters 'adminrobot1' into input text user?[0m
+?[92m|-------- Iris-User enters '*2023Automatizacion*' into input text password?[0m
+?[92m|-------- Iris-User clicks on Next button?[0m
+?[92m|---- When "Iris-User" creates a new billing link from an invoice in the irispay module
+| billingConcept | addReference | reference2 | withOrWithoutReference2 | referenceNumber2 | tag | billingDetail | expirationDate | fileName |
+| concepto 4 | Si | autoreferencia1 | No | cobro1 | Otros4 | Detalle 4 |  | factura |?[0m
+?[92m|------ Iris-user iris pay?[0m
+?[92m|-------- Iris-User clicks on Dashboard option to show the irispay menu?[0m
+?[92m|------ Iris-user billing link from invoice?[0m
+?[92m|-------- Iris-User clicks on button to open the form to create a new payment link?[0m
+?[92m|-------- Iris-user file upload?[0m
+?[92m|---------- Iris-User enters 'C:\Users\yulieth.osorio\Documents\Automation Iris\CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/files/factura.xml' into Field to upload xml file corresponding to invoice?[0m
+?[92m|-------- Iris-User enters 'concepto 4' into Field to enter the billing concept?[0m
+?[92m|-------- Iris-User clicks on Link to add a reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing billing references?[0m
+?[92m|-------- Iris-user select option?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (05acd931ea79cd0516c6b85129eb32cf)] -> xpath: //div[@role='option']]?[0m
+?[92m|-------- Iris-User clicks on selection with reference number?[0m
+?[92m|-------- Iris-User enters 'cobro1' into Field to enter number of the second reference?[0m
+?[92m|-------- Iris-User clicks on Field with the list of existing tags?[0m
+?[92m|-------- Iris-user select tag?[0m
+?[92m|---------- Iris-User clicks on [[ChromeDriver: chrome on WINDOWS (05acd931ea79cd0516c6b85129eb32cf)] -> xpath: //iris-component-tag[@class='ng-star-inserted']/div[@class='tag']/span]?[0m
+?[92m|-------- Iris-User clears field Field to enter the billing detail?[0m
+?[92m|-------- Iris-User enters 'Detalle 4' into Field to enter the billing detail?[0m
+?[92m|-------- Iris-User clicks on field to select expiration date?[0m
+?[92m|-------- Iris-User clicks on button to create and save the new billing link?[0m
+?[92m|---- Then "Iris-User" validates the final message of the link creation, successful?[0m
+?[92m|------ Iris-User should see  that is enabled?[0m
+?[92m|------ Iris-User clicks on button to close pop up?[0m
+?[92m|---- Iris-user session close?[0m
+?[92m|------ Iris-User clicks on initial exit button?[0m
+?[92m|------ Iris-User clicks on confirm exit button?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Successfully create new billing link(manage-billing--with-irispay;successfully-create-new-billing-link)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 63765
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677079771.484][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:29:31 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:29:31 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:29:31 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:29:31 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Successfully create new billing link
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 49329
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677079841.556][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:30:41 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:30:41 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:30:41 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:30:41 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Successfully create new billing link
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 55311
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677079899.043][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:31:39 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:31:39 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:31:39 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:31:39 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 61970
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677079958.358][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:32:38 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:32:38 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:32:38 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:32:38 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Successfully create new billing link from an invoice(manage-billing--with-irispay;successfully-create-new-billing-link-from-an-invoice)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 63306
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677080011.234][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:33:31 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:33:31 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:33:31 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:33:31 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Successfully create new billing link from an invoice
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 56501
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677080069.132][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:34:29 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:34:29 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:34:29 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:34:29 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Successfully create new billing link from an invoice
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 54160
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677080117.932][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:35:17 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:35:17 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:35:17 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:35:17 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/yulieth.osorio/Documents/Automation%20Iris/CL00002-AplicacionDigitalEmpresas-Auto-Front-Apps/src/test/resources/features/IrisPay.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 110.0.5481.77 (resolved driver for Chrome 110)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\yulieth.osorio\.cache\selenium\chromedriver\win32\110.0.5481.77\chromedriver.exe
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 52972
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677080177.048][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb. 22, 2023 10:36:17 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+feb. 22, 2023 10:36:17 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: a no-op implementation
+feb. 22, 2023 10:36:17 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 110.
+feb. 22, 2023 10:36:17 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

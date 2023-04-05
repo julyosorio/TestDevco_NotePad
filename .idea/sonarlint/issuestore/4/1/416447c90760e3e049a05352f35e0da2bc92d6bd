@@ -1,0 +1,49 @@
+
+x
+java:S1104"bMake VALUE_XPATH_START_DATE a static final constant or non-public and provide accessors if needed.(æ‹†
+~
+java:S1104"\Make VALUE_XPATH_DATE a static final constant or non-public and provide accessors if needed.(ş˜¢Îúÿÿÿÿ8¶ïÂÃã0
+x
+java:S1104"bMake VALUE_XPATH_FINAL_DATE a static final constant or non-public and provide accessors if needed.(ãöôÀ
+
+java:S1104"dMake VALUE_XPATH_EXECUTE_DATE a static final constant or non-public and provide accessors if needed.(Ïè«ÿÿÿÿÿ
+x
+java:S1104"\Make VALUE_START_DATE a static final constant or non-public and provide accessors if needed.(ÇêÉ8­øƒÍŞ0
+s
+java:S1104"VMake VALUE_DATE a static final constant or non-public and provide accessors if needed.(—ƒ8›ùÃÃã0
+r
+java:S1104"\Make VALUE_FINAL_DATE a static final constant or non-public and provide accessors if needed.(îëÛé
+t
+java:S1104"^Make VALUE_EXECUTE_DATE a static final constant or non-public and provide accessors if needed.(¤¸²é
+R
+java:S1444"<Make this "public static VALUE_XPATH_START_DATE" field final(æ‹†
+X
+java:S1444"6Make this "public static VALUE_XPATH_DATE" field final(ş˜¢Îúÿÿÿÿ8·ïÂÃã0
+R
+java:S1444"<Make this "public static VALUE_XPATH_FINAL_DATE" field final(ãöôÀ
+Y
+java:S1444">Make this "public static VALUE_XPATH_EXECUTE_DATE" field final(Ïè«ÿÿÿÿÿ
+R
+java:S1444"6Make this "public static VALUE_START_DATE" field final(ÇêÉ8¯øƒÍŞ0
+M
+java:S1444"0Make this "public static VALUE_DATE" field final(—ƒ8œùÃÃã0
+L
+java:S1444"6Make this "public static VALUE_FINAL_DATE" field final(îëÛé
+N
+java:S1444"8Make this "public static VALUE_EXECUTE_DATE" field final(¤¸²é
+w
+java:S3008"aRename this field "VALUE_XPATH_START_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ‹†
+}
+java:S3008"[Rename this field "VALUE_XPATH_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş˜¢Îúÿÿÿÿ8¹ïÂÃã0
+w
+java:S3008"aRename this field "VALUE_XPATH_FINAL_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãöôÀ
+~
+java:S3008"cRename this field "VALUE_XPATH_EXECUTE_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïè«ÿÿÿÿÿ
+w
+java:S3008"[Rename this field "VALUE_START_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇêÉ8³øƒÍŞ0
+r
+java:S3008"URename this field "VALUE_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ƒ8ŸùÃÃã0
+q
+java:S3008"[Rename this field "VALUE_FINAL_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îëÛé
+s
+java:S3008"]Rename this field "VALUE_EXECUTE_DATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤¸²é
